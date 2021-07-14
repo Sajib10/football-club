@@ -1,0 +1,353 @@
+/* *****************
+*    Common Styles
+*.********************/
+/* ? Adding google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+
+}
+.container {
+	max-width: 1162px;
+	margin: 0 auto;
+}
+:root {
+	--pt-color: #18191f;
+	--st-color: #6c6c6c;
+	--btn-color: #e02c6d;
+	--pbg-color: #2d25a0;
+}
+
+.btn-pink {
+	background-color: var(--btn-color);
+	padding: 10px 30px;
+	text-decoration: none;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a:visited {
+	color: #fff;
+}
+
+/* *****************
+*    Header section 
+*.********************/
+
+/* ?---------NavBar---------- */
+.area {
+	background-color: var(--pbg-color);
+	width: 100%;
+	height: 677px;
+	color: #fff;
+}
+nav {
+	padding-top: 30px;
+}
+nav ul {
+	margin-top: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 500;
+}
+.nav-left {
+	width: 589px;
+	display: flex;
+	justify-content: space-between;
+}
+/* ?---------ShowCasae Section---------- */
+.showcase {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.showcase-text h1 {
+	font-weight: 700;
+	font-size: 64px;
+}
+.showcase-img img {
+	position: relative;
+	width: 556px;
+	height: 456px;
+}
+
+/* *****************
+*   Main section 
+*.********************/
+
+main {
+	margin-top: 70px;
+}
+
+/* ?----------All players---------- */
+#all-palyers {
+	margin-bottom: 165px;
+}
+#all-palyers .players-container {
+	width: 1050px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 27px;
+	column-gap: 30px;
+	margin: 0 auto;
+}
+.card {
+	width: 330px;
+	height: 474px;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.card-img {
+	display: flex;
+	justify-content: center;
+}
+.card-img img {
+	margin-top: 15px;
+	height: 256px;
+	width: 300px;
+	transition: transform .5s linear;
+}
+.card-text {
+	margin: 15px;
+	width: 300px;
+	
+}
+
+.card-text h3 {
+	margin: 16px 0 10px;
+}
+.card-text p {
+	margin: 0;
+}
+
+/* ?---------Highlight section---------- */
+#highlight .highlight-container {
+	max-width: 1162px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.highlight-text {
+	width: 469px;
+}
+.highlight-text h2 {
+	margin: 0 0 8px;
+	font-size: 48px;
+	font-weight: 700;
+	color: #0a0826;
+}
+.highlight-text p {
+	margin: 0 0 24px;
+}
+.highlight-img {
+	overflow: hidden;
+}
+.highlight-img img {
+	width: 567px;
+	height: 427px;
+	transition: transform .5s linear;
+}
+
+/* ?----------All Match fixtures---------- */
+#match-fixtures {
+	background-color: #e5e5e5;
+	padding: 100px 0 100px;
+}
+#match-fixtures h2 {
+	text-align: center;
+	font-weight: 700;
+	color: var(--pt-color);
+	font-size: 36px;
+}
+.matches {
+	display: flex;
+	justify-content: space-between;
+}
+.match {
+	width: 280px;
+	border: 1px solid rgba(128, 128, 128, 0.466);
+	border-radius: 0px 20px 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px 15px 0;
+	background-color: #fff;
+	transition: .3s linear;
+}
+.match-club {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.match-club span {
+	background-color: var(--btn-color);
+	color: #fff;
+	font-size: 700;
+	padding: 20px 10px;
+	border-radius: 20px;
+	font-weight: 900;
+	font-size: 24px;
+	margin: 0 10px;
+}
+.match-team h4 {
+	font-weight: 700;
+	font-size: 19px;
+	color: var(--pt-color);
+}
+.match-club img {
+	height: 60px;
+	width: 60px;
+}
+.match .vs {
+	font-size: 16px;
+	color: var(--st-color);
+}
+
+/* ?----------All News Section---------- */
+#news {
+	margin: 50px 0 50px;
+}
+#news h2 {
+	font-size: 36px;
+	font-weight: 700;
+}
+.all-news {
+	display: grid;
+	grid-template-columns: 2fr repeat(2, 1fr);
+	row-gap: 50px;
+	column-gap: 85px;
+}
+#news .news-1 {
+	overflow: hidden;
+	position: relative;
+	height: 300px;
+	width: 491px;
+}
+#news .news-1 img {
+	transition: .5s ease;
+}
+#news .news-2 img {
+	transition: .5s ease;
+}
+#news .news-2 {
+	overflow: hidden;
+	position: relative;
+	height: 300px;
+	width: 250px;
+}
+
+.news-text {
+	position: absolute;
+	bottom: 0;
+	margin-left: 10px;
+}
+.news-text h4 {
+	color: #fff;
+	font-size: 21px;
+	text-shadow: -2px 2px 5px #171717;
+}
+
+/* *****************
+*   Footer section 
+*.********************/
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.footer-img img {
+	height: 110px;
+	width: 484px;
+}
+.social-icon ul {
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	width: 150px;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0;
+}
+.social-icon a {
+	color: #000;
+	font-size: 26px;
+}
+
+/* *************************
+*.**Animation & transition
+*.************************ */
+/* ?------------Shoecase------------- */
+
+@keyframes kick {
+	0% {
+		left: 0;
+		top: 0;
+	}
+	25% {
+		top: 25px;
+		left: 25px;
+	}
+	50% {
+		top: 50px;
+		left: 50px;
+	}
+	75% {
+		top: 75px;
+		left: 75px;
+	}
+	100% {
+		top: 100px;
+		left: 100px;
+	}
+}
+
+.showcase-img img {
+	animation: kick 2s linear infinite alternate;
+	animation-play-state: running;
+}
+
+/* ?-----------all players--------- */
+
+.card-img {
+	overflow: hidden;
+}
+.card:hover .card-img img {
+	transform: scale(1.5);
+}
+
+/* ?-----------Showcase--------- */
+.highlight-img img:hover {
+	transform: scale(1.3);
+}
+
+/* ?0--------- All match fixture---------- */
+.match:hover {
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.55);
+	background-color: var(--btn-color);
+	color: #fff;
+}
+.match:hover h4 {
+	color: #fff;
+}
+.match:hover span {
+	color: var(--pt-color);
+}
+
+/* ?------------News SEction------- */
+.news-1:hover .news-img img {
+	transform: scale(1.2);
+}
+.news-2:hover .news-img img {
+	transform: scale(1.2);
+}
+
+/* ?----------Footer---------- */
+.social-icon a:hover {
+	transition: .3s linear;
+	color: var(--btn-color);
+}
